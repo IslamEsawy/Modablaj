@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.modablaj.SongActivity" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textSize="16sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="14sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/singerName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textSize="16sp" >
+        </TextView>
+
+        <ListView
+            android:id="@+id/lines"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#000000"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical" />
+
+</FrameLayout>
